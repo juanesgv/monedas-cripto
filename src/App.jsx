@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import styled from '@emotion/styled'
 import ImagenCripto from './img/imagen-criptos.png'
-import Formulario from './components/formulario'
+import Formulario from './components/Formulario'
 import Resultado from './components/Resultado'
 import Spinner from './components/Spinner'
 
@@ -23,6 +23,9 @@ const Heading = styled.h1`
   margin-top: 80px;
   margin-bottom: 50px;
   font-size: 34px;
+  @media (max-width: 992px){
+    margin: 24px 0;
+  }
 
   &::after{
     content: '';
@@ -39,6 +42,9 @@ const Imagen = styled.img `
   width: 80%;
   margin: 100px auto 0 auto;
   display: block;
+  @media (max-width: 992px){
+    max-width: 250px;
+  }
 `
 
 function App() {
